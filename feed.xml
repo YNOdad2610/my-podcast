@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sample Podcast</title>
+    <link>https://ynodad2610.github.io/my-podcast/</link>
+    <atom:link href="https://ynodad2610.github.io/my-podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Private episodes written with Claude and voiced with Artlist.</description>
+    <language>en-us</language>
+    <itunes:author>Asaf</itunes:author>
+    <itunes:image href="https://ynodad2610.github.io/my-podcast/cover.jpg"/>
+    <itunes:category text="Education"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+    <item>
+      <title>Mistplay: Call Briefing with Oli</title>
+      <description>Briefing for the call with Oli at Mistplay.</description>
+      <enclosure url="https://ynodad2610.github.io/my-podcast/episode-005.mp3" length="7789627" type="audio/mpeg"/>
+      <guid isPermaLink="false">episode-005.mp3</guid>
+      <pubDate>Mon, 09 Nov 2026 12:03:00 +0200</pubDate>
+      <itunes:duration>00:25:58</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Find Familiar Spirits: Call Prep</title>
+      <description>Prep for the Find Familiar Spirits call.</description>
+      <enclosure url="https://ynodad2610.github.io/my-podcast/episode-004.mp3" length="9372547" type="audio/mpeg"/>
+      <guid isPermaLink="false">episode-004.mp3</guid>
+      <pubDate>Mon, 09 Nov 2026 12:02:00 +0200</pubDate>
+      <itunes:duration>00:31:14</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Eon Channels: Southeast Briefing</title>
+      <description>Briefing on Eon's channels in the Southeast.</description>
+      <enclosure url="https://ynodad2610.github.io/my-podcast/episode-003.mp3" length="10767067" type="audio/mpeg"/>
+      <guid isPermaLink="false">episode-003.mp3</guid>
+      <pubDate>Mon, 09 Nov 2026 12:01:00 +0200</pubDate>
+      <itunes:duration>00:35:53</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Pangea: How It Decides</title>
+      <description>How Pangea decides, written with Claude and voiced with Artlist.</description>
+      <enclosure url="https://ynodad2610.github.io/my-podcast/episode-002.mp3" length="15035003" type="audio/mpeg"/>
+      <guid isPermaLink="false">episode-002.mp3</guid>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 +0200</pubDate>
+      <itunes:duration>00:50:07</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

@@ -11,15 +11,19 @@ def duration(p):
     return f"{s//3600:02d}:{s%3600//60:02d}:{s%60:02d}"
 items = []
 for ep in sorted(json.load(open(os.path.join(HERE,"episodes.json"))), key=lambda e: e["date"], reverse=True):
-    p = os.path.join(HERE, ep["file"])
-    if not os.path.exists(p): sys.exit(f"missing audio file: {ep['file']}")
+    if "url" in ep:  # audio hosted elsewhere (e.g. Artlist); length/duration given in episodes.json
+        url, length, dur = ep["url"], ep["length"], ep["duration"]
+    else:
+        p = os.path.join(HERE, ep["file"])
+        if not os.path.exists(p): sys.exit(f"missing audio file: {ep['file']}")
+        url, length, dur = f"{BASE}/{ep['file']}", os.path.getsize(p), duration(p)
     items.append(f"""    <item>
       <title>{escape(ep['title'])}</title>
       <description>{escape(ep['description'])}</description>
-      <enclosure url="{BASE}/{ep['file']}" length="{os.path.getsize(p)}" type="audio/mpeg"/>
+      <enclosure url="{escape(url, {'"': '&quot;'})}" length="{length}" type="audio/mpeg"/>
       <guid isPermaLink="false">{escape(ep['file'])}</guid>
       <pubDate>{format_datetime(datetime.fromisoformat(ep['date']))}</pubDate>
-      <itunes:duration>{duration(p)}</itunes:duration>
+      <itunes:duration>{dur}</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>""")
 feed = f"""<?xml version="1.0" encoding="UTF-8"?>

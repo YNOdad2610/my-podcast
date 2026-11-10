@@ -1,6 +1,53 @@
 [
- {"file":"episode-002.mp3","title":"Pangea: How It Decides","description":"How Pangea decides, written with Claude and voiced with Artlist.","date":"2026-11-09T12:00:00+02:00"},
- {"file":"episode-003.mp3","title":"Eon Channels: Southeast Briefing","description":"Briefing on Eon's channels in the Southeast.","date":"2026-11-09T12:01:00+02:00"},
- {"file":"episode-004.mp3","title":"Find Familiar Spirits: Call Prep","description":"Prep for the Find Familiar Spirits call.","date":"2026-11-09T12:02:00+02:00"},
- {"file":"episode-005.mp3","title":"Mistplay: Call Briefing with Oli","description":"Briefing for the call with Oli at Mistplay.","date":"2026-11-09T12:03:00+02:00"}
+ {
+  "file": "episode-002.mp3",
+  "title": "Pangea: How It Decides",
+  "description": "How Pangea decides, written with Claude and voiced with Artlist.",
+  "date": "2026-11-09T12:00:00+02:00"
+ },
+ {
+  "file": "episode-003.mp3",
+  "title": "Eon Channels: Southeast Briefing",
+  "description": "Briefing on Eon's channels in the Southeast.",
+  "date": "2026-11-09T12:01:00+02:00"
+ },
+ {
+  "file": "episode-004.mp3",
+  "title": "Find Familiar Spirits: Call Prep",
+  "description": "Prep for the Find Familiar Spirits call.",
+  "date": "2026-11-09T12:02:00+02:00"
+ },
+ {
+  "file": "episode-005.mp3",
+  "title": "Mistplay: Call Briefing with Oli",
+  "description": "Briefing for the call with Oli at Mistplay.",
+  "date": "2026-11-09T12:03:00+02:00"
+ },
+ {
+  "file": "episode-006-part1.mp3",
+  "title": "GetVest: Opportunity Breakdown (Part 1 of 3)",
+  "description": "Part 1 of 3: what Vest (getvest.ai) is, the case for and against it, and where Asaf could fit in. Written with Claude, voiced with Artlist.",
+  "date": "2026-11-10T14:32:00+02:00",
+  "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-s-p-e-e-c-h-v1/media__8/-t-e-x-t_-t-o_-s-p-e-e-c-h-0add333b-a352-4e34-9781-fb98f7b1db40.mp3?Expires=2109583298&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=w3Ojmg9IFPP6J7rc2sHBe1QViNsiVrNYVz7Ep0G1qas9ezaTQ9H-d7jhkNdJGUEOx~p-xRN3pqiIcAcvQBOzmbudh9sDE3qWO~kJxROpTxJRrn7LUD-ZQCKBf0WGNY7yyHv9o4JWisEFeSTLIIG8EbW2LDsBfAQvROApExOsQZRjWkc6ZjPqrzuDd7taTomwddoRnGtxa1w6Eqvsb6qyublJl-CtMPndhnY9~VF8rC19PCPPk1zvohZ8Bu4LN0PATTafXfy5~P8QPBkGpMAvKUtya3tR0fleHYLroIWL0zdH5FlFGJ6oO7G8qsSuLAF25NMqJgxIuiiWZnejDm8nrQ__",
+  "length": 3856135,
+  "duration": "00:04:01"
+ },
+ {
+  "file": "episode-006-part2.mp3",
+  "title": "GetVest: Opportunity Breakdown (Part 2 of 3)",
+  "description": "Part 2 of 3: what Vest (getvest.ai) is, the case for and against it, and where Asaf could fit in. Written with Claude, voiced with Artlist.",
+  "date": "2026-11-10T14:31:00+02:00",
+  "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-s-p-e-e-c-h-v1/media__6/-t-e-x-t_-t-o_-s-p-e-e-c-h-4aadb250-727d-4ab2-9e0a-40d8b3f84e63.mp3?Expires=2109583298&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=oXCgvXRaXQwYsEns9PwlGe53RR3Vu9oCmyKsb5OHv9oZ4qq~4vtRJOHITnQrgk3cHGK8ntQX12pp~famKxei7x1H8Ysn3LeELGrXmn0K-zEPsGyA6Sb8CupAnhau7eyRL1uQNVxGA7TNbeFFr2rYWdRNqxRU8lzqSmrcN7qYNakr1MB7ZN64M3baO072kSbFHoMXq5HUPvDPEPodXQk8gpEud8HUqv~8hyhGrR77I9VutKGF7mbMt5vP3ieKskbeSdq7p9hzN8MDW23tcMDcQlAZl8yeaTLSJAjnZSOtV~XUp7VyE1JctPDMe6Le0etOgZ0nQPi8P7OBq6XpinvXpg__",
+  "length": 4443368,
+  "duration": "00:04:38"
+ },
+ {
+  "file": "episode-006-part3.mp3",
+  "title": "GetVest: Opportunity Breakdown (Part 3 of 3)",
+  "description": "Part 3 of 3: what Vest (getvest.ai) is, the case for and against it, and where Asaf could fit in. Written with Claude, voiced with Artlist.",
+  "date": "2026-11-10T14:30:00+02:00",
+  "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-s-p-e-e-c-h-v1/media__2/-t-e-x-t_-t-o_-s-p-e-e-c-h-e7013617-ac0c-455c-aa27-e9ab1531f11b.mp3?Expires=2109583298&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=EDbH-VoHntx3qUtwgScuCLBy5IFNXCXPlum2DcTeT5dIC-IzV1IhfPeeX7KV1DPmxx45oqOM2qZZWaNRqB3aRXLd2RBQTpt2xLAL-77vgcBxBdSLJVF16WPgNaFtkwDpgPEHRFoPZ6UWVgePREStcvGLiX187hGKWLsuMd1OoiILCAfXaUubHvvDuvzozSy74z4egX3DqnxHtLXB6CbRtvVgJh6EJ4JrHpjwgOtQHXxAxxqWIV6LwZKHY~Y987f~8ylXw0JutzA5T6lWsLp~0Yn1jWtUe37yTdhUNr5M7V5Z1C4FUPTpm6DALCLsSRbGqXDVVisXbgw6s~tCgnnZAA__",
+  "length": 4456324,
+  "duration": "00:04:39"
+ }
 ]

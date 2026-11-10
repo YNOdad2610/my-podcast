@@ -79,6 +79,7 @@ PAGE = """<!DOCTYPE html>
 </main></body></html>
 """
 for ep in json.load(open(os.path.join(HERE, "episodes.json"))):
+    if "url" in ep: continue  # externally hosted parts get no share page
     n = int(ep["file"].split("-")[1].split(".")[0])
     secs = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","default=nw=1:nk=1",os.path.join(HERE, ep["file"])],capture_output=True,text=True).stdout)
     d = os.path.join(HERE, "e", str(n)); os.makedirs(d, exist_ok=True)

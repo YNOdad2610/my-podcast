@@ -86,3 +86,49 @@ for ep in json.load(open(os.path.join(HERE, "episodes.json"))):
     open(os.path.join(d, "index.html"), "w").write(PAGE.format(
         title=h(ep["title"]), desc=h(ep["description"]), ogdesc=h(ep["description"].rstrip(".")), show=h(SHOW["title"]),
         base=BASE, n=n, file=ep["file"], mins=round(secs / 60)))
+
+# Shareable page for a multi-part, externally hosted episode: parts carrying a "share" block
+# are grouped by episode number into one page with a player per part (<BASE>/e/<number>/).
+GROUP = """<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>{title} · {show}</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{ogdesc} · {show} · {mins} min">
+<meta property="og:image" content="{base}/cover-share.jpg">
+<meta property="og:image:width" content="600"><meta property="og:image:height" content="600">
+<meta property="og:url" content="{base}/e/{n}/">
+<style>
+ body{{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#111;color:#f2f2f2;display:flex;min-height:100vh;align-items:center;justify-content:center}}
+ main{{max-width:420px;width:100%;padding:28px 22px;box-sizing:border-box;text-align:center}}
+ img{{width:100%;max-width:300px;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.5)}}
+ .show{{margin:22px 0 4px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#9a9a9a}}
+ h1{{margin:0 0 8px;font-size:22px;line-height:1.25}}
+ p{{margin:0 0 22px;color:#bdbdbd;font-size:15px;line-height:1.45}}
+ h2{{margin:18px 0 6px;font-size:14px;font-weight:600;color:#d6d6d6;text-align:left}}
+ audio{{width:100%}}
+ .meta{{margin-top:14px;font-size:13px;color:#8a8a8a}}
+</style></head><body><main>
+<img src="{base}/cover-share.jpg" alt="">
+<div class="show">{show}</div>
+<h1>{title}</h1>
+<p>{desc}</p>
+{players}
+<div class="meta">{mins} min in {count} parts</div>
+</main></body></html>
+"""
+groups = {}
+for ep in json.load(open(os.path.join(HERE, "episodes.json"))):
+    if "url" in ep and "share" in ep:
+        groups.setdefault(int(ep["file"].split("-")[1]), []).append(ep)
+for n, parts in groups.items():
+    parts.sort(key=lambda e: e["file"])
+    secs = sum(int(x) * m for e in parts for x, m in zip(e["duration"].split(":"), (3600, 60, 1)))
+    players = "\n".join(f'<h2>Part {i}</h2>\n<audio controls preload="metadata" src="{h(e["url"])}"></audio>' for i, e in enumerate(parts, 1))
+    sh = parts[0]["share"]
+    d = os.path.join(HERE, "e", str(n)); os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, "index.html"), "w").write(GROUP.format(
+        title=h(sh["title"]), desc=h(sh["description"]), ogdesc=h(sh["description"].rstrip(".")), show=h(SHOW["title"]),
+        mins=round(secs / 60), count=len(parts), base=BASE, n=n, players=players))

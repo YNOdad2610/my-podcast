@@ -12,6 +12,15 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>Nightly Brief: Thu 19 Nov</title>
+      <description>Pangea nightly brief: action items, WhatsApp groups, Granola meetings and GitHub for Thursday, Nov 19. Written with Claude, voiced with Artlist.</description>
+      <enclosure url="https://ynodad2610.github.io/my-podcast/episode-008.mp3" length="4829980" type="audio/mpeg"/>
+      <guid isPermaLink="false">episode-008.mp3</guid>
+      <pubDate>Thu, 19 Nov 2026 22:45:00 +0200</pubDate>
+      <itunes:duration>00:05:02</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>ZyG: Selling Scale as a Service</title>
       <description>A case study of ZyG, the agentic operating system for e-commerce brands: product, business model, competitors and what protects it.</description>
       <enclosure url="https://ynodad2610.github.io/my-podcast/episode-007.mp3" length="8514708" type="audio/mpeg"/>
